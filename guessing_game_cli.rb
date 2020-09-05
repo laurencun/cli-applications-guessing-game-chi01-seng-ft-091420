@@ -7,7 +7,7 @@ def run_guessing_game
     puts "You guessed the correct number!"
   end 
   if user_input !== "exit" && user_input !== x
-    puts "Goodbye"
+    puts "Sorry! The computer guessed #{x}."
   end 
   if puts "Sorry! The computer guessed #{x}."
   end
