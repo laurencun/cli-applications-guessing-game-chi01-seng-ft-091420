@@ -2,11 +2,11 @@
 def run_guessing_game
   x = rand(6) + 1
   puts "Enter number between 1 and 6."
-  user_input = gets.chomp
+  user_input = gets.chomp.to_int
   if user_input == x
     puts "You guessed the correct number!"
   end 
-  if user_input != "exit" && user_input != "x"
+  if user_input != "exit" && user_input != x
     puts "Sorry! The computer guessed #{x}."
   end 
   if user_input == "exit"
